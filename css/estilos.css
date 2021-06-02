@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+@font-face {
+    font-family:miFuente;
+    src: url(../fuentes/BodoniFLF-Italic.ttf);
+    font-style:italic;
+    font-weight: 700;
+}
+
+* {box-sizing:border-box;}
+body {font-family: 'Poppins', sans-serif; font-weight: 300;
+font-size: 90%;
+color: #333;
+
+
+
+}
+h1,h2,body { margin: 0; font-weight: 200;}
+h1 span   { font-family: miFuente;
+          font-style:italic;
+          font-weight: 700;}
+h2 { font-size: 2rem;}  
+h3 { font-size:3rem; color: #b45008;}
+h4 { color: #e8bf65; font-size: 1.4em; text-shadow: 2px 3px 2px rgba(200,200,14,0.5);}  
+h4::before { content:counter(miContador, lower-alpha) "\e900";
+counter-increment: miContador;font-family: 'icomoon';  } 
+
+
+/*
+input:focus { 
+ background:rgba(100, 100, 100, 0.5);
+width: 200px;}
+*/
+#barraNavegacion { 
+   
+    width:100%; 
+    height: 40px; 
+    display:flex;
+    justify-content: flex-end ;
+    /*alineacion horizontal de los elementos
+    con flex*/
+    align-items:center;
+    /*alineacion vertical de los elementos con flex
+    
+    flex-start => arriba
+    flex-end => abajo
+    stretch => estira las imagenes
+    center => centro
+    
+    
+    */
+
+                        } 
+
+#barraNavegacion img {
+    margin-right: auto;
+    width: 2%;
+    height: auto;
+    /*height auto mantiene la proporcionalidad   */
+    max-width: 100%;
+    /*asegurarme que nunca exceda su propio tamaño de origen, 128px*/
+ }
+ 
+ #barraNavegacion a { 
+margin-left:5px;
+text-decoration:none;
+/*quitar la decoración de texto*/
+
+text-transform: uppercase;
+/*text-transform: none; valor por defecto*/
+/*todo el texto en mayúscula*/
+/*text-transform: lowercase;
+está todo en minúscula*/
+/*
+text-transform: capitalize;
+el texto aparece la primer letra en capital
+*/
+/*cuando está en mayúscula no funciona el último valor*/
+font-variant: small-caps;
+color: #333;
+
+
+ }
+
+
+
+ #barraNavegacion a:hover {
+
+text-decoration:underline;
+
+
+  }
+
+#encabezado{
+  width: 100%;  
+  background-image: url(../imagenes/banner.JPG);
+  background-repeat:no-repeat;
+ background-size: cover;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+#encabezado div { width: 50%; background-color: rgba(255, 255, 255,0.5 );}
+#encabezado h1 { font-size: 2rem;}
+
+#chat {
+  width: 50px;
+ height: 50px;
+  background-image:linear-gradient(rgba(226,127,14,0.5),rgba(255,255,255,0.5)), url(../imagenes/chat.png);
+  background-repeat: no-repeat;
+  background-size:contain;
+  border-radius:20px;
+  position: fixed;
+  left: 97%; 
+top: 50px; }
+
+.btn { margin-top: 10px; font-weight: bold;}
+#formulario { color: white; display:none;  }
+.container { width: 50%; position: absolute; top: 20%; left: 25%;
+display:flex; justify-content: center;}
+.container-fluid {
+   position:fixed; 
+   background-color: rgba(0,0,0,0.7);
+   height: 100%; 
+   top: 0; 
+   left: 0;}
+
+#barraNavegacion .activo { 
+
+text-decoration:underline;
+font-weight:bold;
+
+}
+.nosotros {
+
+  background-color: 
+  #b45008;
+  ;
+}
+
+.division { 
+
+width: 100%;
+padding: 1rem; 
+display: flex;
+margin-bottom: 2px;
+
+
+
+}
+
+.division div { width: 50%;
+}
+
+.division div img { 
+  display: block;
+  width: 80%;
+  margin-left:auto;
+  margin-right: auto;
+border-radius:10px/20px;
+box-shadow: 1px 3px 10px black;
+  
+  
+  /*border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;*/
+}
+
+.articulos { float:left;
+width:50%;
+padding:1em;
+counter-reset: miContador;  }
+
+.nosotros .grilla { display: grid; 
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 200px 200px;
+  grid-gap: 10px; 
+}
+
+
+.grilla div { width: auto;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.grilla div:first-child {
+ background-image: url(../imagenes/gym-01.JPG);
+ grid-row-start:1;
+ grid-row-end: 3;
+background-position:0px -40px;
+
+
+
+}
+
+.grilla div:nth-child(2) {
+
+  background-image: url(../imagenes/gym-02.JPG); 
+}
+.grilla div:nth-child(3) {
+
+  background-image: url(../imagenes/gym-03.JPG); 
+  background-position: 0px;
+ 
+ }
+
+footer { 
+  width: 100% ; 
+  height: 200px; 
+  background-color:#b45008;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+
+}
+
+
+
+footer ul  { margin: 0; 
+  padding: 10px;
+  list-style:none;
+
+
+
+}
+
+
+p:first-child, ul:first-of-type {
+
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+

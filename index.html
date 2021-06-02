@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuelta de Tuerca</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">  
+  <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/estilos.css"> 
+<!--lo último que escribo si tengo mismo selector misma propiedad
+diferente valor es lo que queda-->
+
+</head>
+<body>
+
+<div class="container-fluid" id="formulario">
+    <div class="container">
+<form action="php/enviar.php" method="post">
+
+ <div class="form-group"> 
+<label>Nombre 
+<input type="text" required name="nombre" id="nombre" class="form-control">
+                </label>
+            
+            </div>   <!--campo de nombre-->
+
+
+<div class="form-group">
+<label>Email
+<input type="email" required name="correo" class="form-control"></label></div>
+
+
+
+
+<button class="btn btn-success">Enviar</button>
+<button  class="btn btn-danger" onclick="cerrar()">Cerrar</button>
+            </form>
+    </div>
+</div>
+
+   <div id="chat"></div> <!--chat -->
+   <nav id="barraNavegacion">
+      <img src="imagenes/logo.png" alt="logo vuelta de tuerca"> 
+   
+       <a href="index.html" class="activo">inicio</a>
+       <a href="#" onclick="abrir()">contacto</a>
+                    </nav> <!--cierra el nav principal--> 
+
+
+                                
+  <header id="encabezado">
+      <div>
+          <h1>Gimnasio 
+              <span>vuelta de tuerca</span>
+                                        </h1>
+      </div>
+  </header>  <!--cierra header-->
+  
+  
+  <main>
+
+<section class="division nosotros">
+<div>   
+<h2>Amor al deporte</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dignissimos aliquam ipsam quos adipisci, doloribus, quidem incidunt perferendis a exercitationem officia id illo consequatur ab, dolor distinctio placeat maiores corporis.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dignissimos aliquam ipsam quos adipisci, doloribus, quidem incidunt perferendis a exercitationem officia id illo consequatur ab, dolor distinctio placeat maiores corporis.</p>
+</div> <!--cierra el 1er div del section-->
+
+<div  class="grilla">
+    <div> </div> <!--primer hijo del elemento .grilla-->
+    <div></div> <!--segundo elemento del elemento .grilla-->
+    <div></div> <!--tercer elemento del elemento .grilla-->
+</div>
+
+
+
+                                                        </section>
+                                                        <!--cierra 1er section-->
+<section class="division">
+<div>
+
+<img src="imagenes/ejercicio.JPG" alt="ejercicio">
+
+
+</div>
+
+
+<div>
+    <h3>Cronograma</h3>
+<article class="articulos">
+
+<h4>Natación</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, aliquam sunt? Ad id necessitatibus accusamus dolores eaque, modi ex. Natus, aspernatur? Sed excepturi harum nemo, vitae nisi beatae dicta quo.</p>
+
+<h4>Streching</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, aliquam sunt? Ad id necessitatibus accusamus dolores eaque, modi ex. Natus, aspernatur? Sed excepturi harum nemo, vitae nisi beatae dicta quo.</p>
+<h4>Funcional</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, aliquam sunt? Ad id necessitatibus accusamus dolores eaque, modi ex. Natus, aspernatur? Sed excepturi harum nemo, vitae nisi beatae dicta quo.</p>
+
+<h4>Aeróbico</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, aliquam sunt? Ad id necessitatibus accusamus dolores eaque, modi ex. Natus, aspernatur? Sed excepturi harum nemo, vitae nisi beatae dicta quo.</p>
+
+</article> <!--cierra primer articulo-->
+<article class="articulos">
+
+    <h4>Artes Marciales</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, aliquam sunt? Ad id necessitatibus accusamus dolores eaque, modi ex. Natus, aspernatur? Sed excepturi harum nemo, vitae nisi beatae dicta quo.</p>
+    <h4>Musculación</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, aliquam sunt? Ad id necessitatibus accusamus dolores eaque, modi ex. Natus, aspernatur? Sed excepturi harum nemo, vitae nisi beatae dicta quo.</p>
+    
+    <h4>Danza</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, aliquam sunt? Ad id necessitatibus accusamus dolores eaque, modi ex. Natus, aspernatur? Sed excepturi harum nemo, vitae nisi beatae dicta quo.</p>
+
+        </article> <!--cierra segundo articulo-->
+
+    </div><!--cierra el 1er div del section-->
+                    </section> <!--cierra segundo section-->
+
+
+
+                                    </main> <!--cierra main-->
+
+
+<footer>
+
+<p>@perfil</p>
+<ul>
+    <li >Lorem ipsum dolor sit amet<br>
+        Lorem ipsum dolor sit amet</li>
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Lorem ipsum dolor sit amet</li>
+</ul>
+<ul>
+  <li>Lorem ipsum dolor sit amet</li>
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Lorem ipsum dolor sit amet</li>
+</ul>
+<ul>
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Lorem ipsum dolor sit amet</li>
+</ul>
+
+
+
+
+
+
+</footer>
+
+<script src="js/codigo.js"></script>
+
+</body>
+</html>
